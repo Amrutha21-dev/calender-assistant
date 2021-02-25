@@ -32,4 +32,14 @@ public class User {
 		this.lastName = lastName;
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		User user = (User) obj;
+		if(user.id == this.id) {
+			return true;
+		}
+		return false;
+	}
+	
+	
 }

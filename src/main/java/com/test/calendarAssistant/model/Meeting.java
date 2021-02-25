@@ -8,7 +8,6 @@ public class Meeting implements Comparable<Meeting>{
 		private int id;
 		private String name;
 		private int organizerId;
-		private int numberOfInvitees;
 		private List<User> invitees;
 		private Date startTime;
 		private Date endTime;
@@ -30,12 +29,6 @@ public class Meeting implements Comparable<Meeting>{
 		}
 		public void setOrganizerId(int organizerId) {
 			this.organizerId = organizerId;
-		}
-		public int getNumberOfInvitees() {
-			return numberOfInvitees;
-		}
-		public void setNumberOfInvitees(int numberOfInvitees) {
-			this.numberOfInvitees = numberOfInvitees;
 		}
 		public List<User> getInvitees() {
 			return invitees;
@@ -73,5 +66,14 @@ public class Meeting implements Comparable<Meeting>{
 				}
 			}
 			return 0;
+		}
+		
+		@Override
+		public boolean equals(Object obj) {
+			Meeting meeting = (Meeting) obj;
+			if(meeting.id == this.id) {
+				return true;
+			}
+			return false;
 		}
 }

@@ -1,0 +1,465 @@
+{
+	"info": {
+		"_postman_id": "89e64784-518c-4177-acd2-b1daac70d182",
+		"name": "Calendar Assistant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/CalendarAssistant/api/user/addAll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {  \n        \"firstName\":\"Thomas\",\n        \"lastName\":\"Mathew\",\n        \"rank\":1\n    },\n    {  \n        \"firstName\":\"Jayaprakash\",\n        \"lastName\":\"Ganta\",\n        \"rank\":1\n    },\n    {  \n        \"firstName\":\"Vikas\",\n        \"lastName\":\"KR\",\n        \"rank\":2\n    },\n        {  \n        \"firstName\":\"Ashish\",\n        \"lastName\":\"Sodhi\",\n        \"rank\":2\n    },\n        {  \n        \"firstName\":\"Vijay\",\n        \"lastName\":\"Prakash\",\n        \"rank\":1\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/user/addAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"user",
+						"addAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/user/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/user/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"user",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/user/get/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/user/get/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"user",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/user/add",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"Thomas\",\n    \"lastName\":\"Mathew\",\n    \"rank\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/user/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/meeting/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/meeting/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"meeting",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/meeting/get/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/meeting/get/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"meeting",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/meeting/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Thomas-JP Meeting\", \n    \"startTime\":\"2021-02-22T18:00:00.000+0530\",\n    \"endTime\":\"2021-02-22T19:00:00.000+0530\", \n    \"organizerId\":1, \n    \"invitees\":[1,2]\n}\n        ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/meeting/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"meeting",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/meeting/addAll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n    \"name\":\"Thomas-JP Meeting\", \n    \"startTime\":\"2021-02-22T18:00:00.000+0530\",\n    \"endTime\":\"2021-02-22T19:00:00.000+0530\", \n    \"organizerId\":1, \n    \"invitees\":[1,2]\n    },\n    {\n        \"name\":\"Thomas-JP Meeting\", \n        \"startTime\":\"2021-02-22T18:30:00.000+0530\",\n        \"endTime\":\"2021-02-22T19:30:00.000+0530\", \n        \"organizerId\":2, \n        \"invitees\":[1,2]\n    },\n    {\n        \"name\":\"Thomas-JP Meeting\", \n        \"startTime\":\"2021-02-22T16:00:00.000+0530\",\n        \"endTime\":\"2021-02-22T17:00:00.000+0530\", \n        \"organizerId\":2, \n        \"invitees\":[1,2]\n    },\n    {\n        \"name\":\"Thomas-Vikas Meeting\", \n        \"startTime\":\"2021-02-22T16:30:00.000+0530\",\n        \"endTime\":\"2021-02-22T17:30:00.000+0530\", \n        \"organizerId\":3, \n        \"invitees\":[1,3]\n    },\n    {\n        \"name\":\"Thomas-Vikas Meeting\", \n        \"startTime\":\"2021-02-22T14:00:00.000+0530\",\n        \"endTime\":\"2021-02-22T15:00:00.000+0530\", \n        \"organizerId\":3, \n        \"invitees\":[1,3]\n    },\n    {\n        \"name\":\"Thomas-Vikas-Ashish Meeting\", \n        \"startTime\":\"2021-02-22T14:30:00.000+0530\",\n        \"endTime\":\"2021-02-22T15:00:00.000+0530\", \n        \"organizerId\":4, \n        \"invitees\":[1,3,4]\n    },\n    {\n        \"name\":\"Thomas-Ashish Meeting\", \n        \"startTime\":\"2021-02-22T11:00:00.000+0530\",\n        \"endTime\":\"2021-02-22T11:30:00.000+0530\", \n        \"organizerId\":4, \n        \"invitees\":[1,4]\n    },\n    {\n        \"name\":\"Thomas-Ashish-JP Meeting\", \n        \"startTime\":\"2021-02-22T09:00:00.000+0530\",\n        \"endTime\":\"2021-02-22T10:00:00.000+0530\", \n        \"organizerId\":4, \n        \"invitees\":[1,2,4]\n    },\n    {\n        \"name\":\"Thomas-Vikas-Ashish Meeting\", \n        \"startTime\":\"2021-02-22T09:30:00.000+0530\",\n        \"endTime\":\"2021-02-22T10:30:00.000+0530\", \n        \"organizerId\":3, \n        \"invitees\":[1,3,4]\n    },\n     {\n        \"name\":\"Vijay first Meeting\", \n        \"startTime\":\"2021-02-22T09:00:00.000+0530\",\n        \"endTime\":\"2021-02-22T10:30:00.000+0530\", \n        \"organizerId\":5, \n        \"invitees\":[1,5]\n    },\n    {\n        \"name\":\"Vijay second Meeting\", \n        \"startTime\":\"2021-02-22T10:30:00.000+0530\",\n        \"endTime\":\"2021-02-22T11:30:00.000+0530\", \n        \"organizerId\":5, \n        \"invitees\":[1,5]\n    },\n    {\n        \"name\":\"Vijay third Meeting\", \n        \"startTime\":\"2021-02-22T12:30:00.000+0530\",\n        \"endTime\":\"2021-02-22T13:30:00.000+0530\", \n        \"organizerId\":5, \n        \"invitees\":[1,5]\n    },\n    {\n        \"name\":\"Vijay fourth Meeting\", \n        \"startTime\":\"2021-02-22T15:00:00.000+0530\",\n        \"endTime\":\"2021-02-22T20:00:00.000+0530\", \n        \"organizerId\":5, \n        \"invitees\":[1,5]\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/meeting/addAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"meeting",
+						"addAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/meeting/getRank/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/meeting/getRank/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"meeting",
+						"getRank",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/meeting/resolve",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"meetingId1\":1,\n    \"meetingId2\":2,\n    \"organizerId\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/meeting/resolve",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"meeting",
+						"resolve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/calendar/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\":1,\n    \"meetingId\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/calendar/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"calendar",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/calendar/addAll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"userId\":1,\n        \"meetingId\":1\n    },\n    {\n        \"userId\":1,\n        \"meetingId\":2\n    },\n    {\n        \"userId\":1,\n        \"meetingId\":3\n    },\n    {\n        \"userId\":1,\n        \"meetingId\":4\n    },\n    {\n        \"userId\":1,\n        \"meetingId\":5\n    },\n    {\n        \"userId\":1,\n        \"meetingId\":6\n    },\n    {\n        \"userId\":1,\n        \"meetingId\":7\n    },\n    {\n        \"userId\":1,\n        \"meetingId\":8\n    },\n    {\n        \"userId\":1,\n        \"meetingId\":9\n    },\n    {\n        \"userId\":5,\n        \"meetingId\":10\n    },\n    {\n        \"userId\":5,\n        \"meetingId\":11\n    },\n    {\n        \"userId\":5,\n        \"meetingId\":12\n    },\n    {\n        \"userId\":5,\n        \"meetingId\":13\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/calendar/addAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"calendar",
+						"addAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/calendar/get/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/calendar/get/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"calendar",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/calendar/getConflictingMeetings/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/calendar/getConflictingMeetings/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"calendar",
+						"getConflictingMeetings",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/calendar/getResolvedMeetings/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/calendar/getResolvedMeetings/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"calendar",
+						"getResolvedMeetings",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/calendar/getFreeSlots/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/calendar/getFreeSlots/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"calendar",
+						"getFreeSlots",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CalendarAssistant/api/calendar/getFreeSlotForMeeting?duration=30&user1=1&user2=5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/CalendarAssistant/api/calendar/getFreeSlotForMeeting?duration=30&user1=1&user2=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CalendarAssistant",
+						"api",
+						"calendar",
+						"getFreeSlotForMeeting"
+					],
+					"query": [
+						{
+							"key": "duration",
+							"value": "30"
+						},
+						{
+							"key": "user1",
+							"value": "1"
+						},
+						{
+							"key": "user2",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
